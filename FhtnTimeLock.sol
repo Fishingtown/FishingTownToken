@@ -16,8 +16,8 @@ contract Timelock {
     event QueueTransaction(bytes32 indexed txHash, address indexed target, uint value, string signature, bytes data, uint eta);
 
     uint public constant GRACE_PERIOD = 14 days;
-    uint public constant MINIMUM_DELAY = 12 hours;
-    uint public constant MAXIMUM_DELAY = 24 hours;
+    uint public constant MINIMUM_DELAY = 24 hours;
+    uint public constant MAXIMUM_DELAY = 48 hours;
 
     address public admin;
     address public pendingAdmin;
